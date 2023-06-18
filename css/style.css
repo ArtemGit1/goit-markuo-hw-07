@@ -209,6 +209,7 @@ body{
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
 .header-list{
     font-weight: 500;
     font-size: 16px;
@@ -257,6 +258,67 @@ body{
 .address-list:hover,
 .address-list:focus{
     color: #404bbf;
+}
+.mob-menu-header{
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    background: #FFFFFF;
+    position: fixed;
+}
+.mob-menu-header-list{
+    width: 151px;
+    height: 200px;
+    padding: 0px;
+    gap: 40px;
+    margin-top: 80px;
+    margin-left: 40px;
+}
+.mob-menu-header-list-li{
+    color: #404BBF;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 0.02em;;
+    margin-bottom: 40px;
+}
+.mob-menu-header-list-li-a{
+    color: #2E2F42;
+}
+.mob-menu-header-address-list{
+    width: 353px;
+    height: 104px;
+    margin-top: 284px;
+    margin-left: 40px;
+    margin-right: 35px;
+}
+.mob-menu-header-address-list-li{
+    width: 353px;
+    height: 40px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #4D5AE5;
+}
+.mob-menu-header-address-list-li-a-two{
+    width: 192px;
+    height: 24px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+.mob-menu-header .index-footer-sn-list-li{
+    margin-left: 44px;
 }
 .section{
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-1.jpg);
@@ -422,9 +484,18 @@ img{
     display: flex;
 }
 .container{
-    width: 1158px;
-    margin: 0 auto;
+    width: 100%;
     padding: 0 15px;
+}
+.header-modal-btn{
+    max-width: 32px;
+    max-height: 32px;
+    margin-right: -65px;
+    background-color: transparent;
+    border: transparent;
+}
+.header-modal-btn-svg{
+    stroke: #2E2F42;
 }
 .sec-four-sn-list{
     display: flex;
@@ -481,6 +552,10 @@ img{
 .header-nav-list{
     display: flex;
     gap: 40px;
+}
+.curent-page{
+    color: #404bbf;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .curent-page-index{
     font-weight: 500;

@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
     
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,6 +22,11 @@
         <div class="header-div container"> 
             <nav class="index-header-nav">
                 <a href="./index.html" class="logo link">Web<span class="logo-span">Studio</span></a>
+                <button type="button" class="header-modal-btn" data-menu-open>
+                    <svg class="header-modal-btn-svg" height="32" width="32" openMenuBtn>
+                        <use href="./images/icons.svg#icon-charm_menu-hamburger"></use>
+                    </svg>
+                </button>
                 <ul class="list header-nav-list">
                     <li class="header-list-one curent-page-index"><a href="./index.html" class="link curent-page-index header-list">Studio</a></li>
                     <li class="header-list-one"><a href="./portfolio.html" class="link header-list">Portfolio</a></li>
@@ -29,11 +35,59 @@
             </nav>
             <address class="header-adress">
                 <ul class="list header-address-list">
-                    <li class="adress-one link"><a href="mailto:info@devstudio.com" class="address-list link" >info@devstudio.com</a></li>
+                    <li class="adress-one link"><a href="mailto:info@devstudio.com" class="address-list link">info@devstudio.com</a></li>
                     <li class="adress-one link"><a href="tel:+110001111111" class="address-list link">+11 (000) 111-11-11</a></li>
                 </ul>
             </address>
-        </div> 
+        </div>
+        <div class="mob-menu-header is-hidden" data-menu>
+            <button type="button" class="modal-close-button" data-menu-close>
+                <svg class="modal-close-button-svg" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close-button"></use>
+                </svg>
+            </button>
+            <ul class="mob-menu-header-list list">
+                <li class="mob-menu-header-list-li"><a href="./index.html" class="curent-page mob-menu-header-list-li-a link">Studio</a></li>
+                <li class="mob-menu-header-list-li"><a href="./portfolio.html" class="mob-menu-header-list-li-a link">Portfolio</a></li>
+                <li class="mob-menu-header-list-li"><a href="" class="mob-menu-header-list-li-a link">Contacts</a></li>
+            </ul>
+            <address>
+                <ul class="mob-menu-header-address-list list">
+                    <li class="mob-menu-header-address-list-li"><a href="tel:+110001111111" class="link mob-menu-header-address-list-li-a">+11 (000) 111-11-11</a></li>
+                    <li class="mob-menu-header-address-list-li"><a href="mailto:info@devstudio.com" class="link mob-menu-header-address-list-li-a-two">info@devstudio.com</a></li>
+                </ul>
+            </address>
+            <ul class="index-footer-sn-list list">
+                <li class="index-footer-sn-list-li">
+                    <a href="" rel="noreferrer noopener" class="index-footer-list-li-a">
+                        <svg class="index-footer-sn-list-li-svg" width="24" height="24">
+                            <use href="./images/social-networks.svg#icon-instagram-2"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="index-footer-sn-list-li">
+                    <a href="" rel="noreferrer noopener" class="index-footer-list-li-a">
+                        <svg class="index-footer-sn-list-li-svg" width="24" height="24">
+                            <use href="./images/social-networks.svg#icon-twitter-1"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="index-footer-sn-list-li">
+                    <a href="" rel="noreferrer noopener" class="index-footer-list-li-a">
+                        <svg class="index-footer-sn-list-li-svg" width="24" height="24">
+                            <use href="./images/social-networks.svg#icon-facebook-1"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="index-footer-sn-list-li">
+                    <a href="" rel="noreferrer noopener" class="index-footer-list-li-a">
+                        <svg class="index-footer-sn-list-li-svg" width="24" height="24">
+                            <use href="./images/social-networks.svg#icon-linkedin-1"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </header>
     <main>
         <section class="section">
@@ -90,9 +144,36 @@
             <div class="container">
                 <h2 class="section-three-h">What are we doing</h2>
                 <ul class="list sec-three-list">
-                    <li class="sec-three-list-li"><img src="./images/image1.jpg" alt="Pc" width = 360></li>
-                    <li class="sec-three-list-li"><img src="./images/image2.jpg" alt="Mail" width = 360></li>
-                    <li class="sec-three-list-li"><img src="./images/image3.jpg" alt="Web" width = 360></li>
+                    <li class="sec-three-list-li">
+                        <picture>
+                            <source srcset="./images/image1.jpg 1x, ./images/computer-2x.jpg 2x"
+                                    media="(min-width:320px)">
+                            <source srcset="./images/image1.jpg 1x, ./images/computer-2x.jpg 2x"
+                                    media="(min-width:768px)">
+                            <source srcset="./images/image1.jpg 1x, ./images/computer-2x.jpg 2x"
+                                    media="(min-width:1200px)">
+                            <img src="./images/image1.jpg" alt="Pc" width = 360>
+                    </picture></li>
+                    <li class="sec-three-list-li">
+                        <picture>
+                            <source srcset="./images/image2.jpg 1x, ./images/image2-2x.jpg 2x"
+                                    media="(min-width:320px)">
+                            <source srcset="./images/image2.jpg 1x, ./images/image2-2x.jpg 2x"
+                                    media="(min-width:768px)">
+                            <source srcset="./images/image2.jpg 1x, ./images/image2-2x.jpg 2x"
+                                    media="(min-width:1200px)">
+                            <img src="./images/image2.jpg" alt="Mail" width = 360>
+                        </picture></li>
+                    <li class="sec-three-list-li">
+                        <picture>
+                            <source srcset="./images/image3.jpg 1x, ./images/image3-2x.jpg 2x"
+                                    media="(min-width:320px)">
+                            <source srcset="./images/image3.jpg 1x, ./images/image3-2x.jpg 2x"
+                                    media="(min-width:768px)">
+                            <source srcset="./images/image3.jpg 1x, ./images/image3-2x.jpg 2x"
+                                    media="(min-width:1200px)">
+                            <img src="./images/image3.jpg" alt="Web" width = 360>
+                        </picture></li>
                 </ul>
             </div>
         </section>
@@ -101,9 +182,17 @@
             <h2 class="section-three hhhh">Our Team</h2>
                 <ul class="list sec-four-list">
                     <li class="section-fout-list-one">
-                        <img src="./images/Mark.jpg" class="mark" alt="Mark" width = 264>
+                        <picture>
+                            <source srcset="./images/Mark.jpg 1x, ./images/mark-2x.jpg 2x"
+                                    media="(min-width:320px)">
+                            <source srcset="./images/Mark.jpg 1x, ./images/mark-2x.jpg 2x"
+                                    media="(min-width:768px)">
+                            <source srcset="./images/Mark.jpg 1x, ./images/mark-2x.jpg 2x"
+                                    media="(min-width:1200px)">
+                            <img src="./images/Mark.jpg" class="mark" alt="Mark" width = 264>
+                        </picture>
                         <div class="sec-four-worker">
-                            <h3 class="section-two-list-h section-four-list-h-three">Mark Guerrero</h3>
+                            <h3 class="section-four-list-h-three">Mark Guerrero</h3>
                             <p class="section-two-list-p section-four-list-p">Product Designer</p>
                             <ul class="sec-four-sn-list">
                                 <li class="sec-four-worker-sn-li">
@@ -138,9 +227,17 @@
                         </div>
                     </li>
                     <li class="section-fout-list-one">
-                        <img src="./images/Tom.jpg" alt="Tom" width = 264>
+                        <picture>
+                            <source srcset="./images/tom.jpg 1x, ./images/tom-2x.jpg 2x"
+                                    media="(min-width:320px)">
+                            <source srcset="./images/tom.jpg 1x, ./images/tom-2x.jpg 2x"
+                                    media="(min-width:768px)">
+                            <source srcset="./images/tom.jpg 1x, ./images/tom-2x.jpg 2x"
+                                    media="(min-width:1200px)">
+                            <img src="./images/Tom.jpg" alt="Tom" width = 264>
+                        </picture>
                         <div class="sec-four-worker">
-                            <h3 class="section-two-list-h section-four-list-h-three">Tom Ford</h3>
+                            <h3 class="section-four-list-h-three">Tom Ford</h3>
                             <p class="section-two-list-p section-four-list-p">Frontend Developer</p>
                             <ul class="sec-four-sn-list">
                                 <li class="sec-four-worker-sn-li">
@@ -175,9 +272,17 @@
                         </div>
                     </li>
                     <li class="section-fout-list-one">
-                        <img src="./images/Camilla.jpg" alt="Camilla" width = 264>
+                        <picture>
+                            <source srcset="./images/Camilla.jpg 1x, ./images/camilla-2x.jpg 2x"
+                                    media="(min-width:320px)">
+                            <source srcset="./images/Camilla.jpg 1x, ./images/camilla-2x.jpg 2x"
+                                    media="(min-width:768px)">
+                            <source srcset="./images/Camilla.jpg 1x, ./images/camilla-2x.jpg 2x"
+                                    media="(min-width:1200px)">
+                            <img src="./images/Camilla.jpg" alt="Camilla" width = 264>
+                        </picture>
                         <div class="sec-four-worker">
-                            <h3 class="section-two-list-h section-four-list-h-three">Camila Garcia</h3>
+                            <h3 class="section-four-list-h-three">Camila Garcia</h3>
                             <p class="section-two-list-p section-four-list-p">Marketing</p>
                             <ul class="sec-four-sn-list">
                                 <li class="sec-four-worker-sn-li">
@@ -212,9 +317,17 @@
                         </div>
                     </li>
                     <li class="section-fout-list-one">
-                        <img src="./images/Daniel.jpg" alt="Daniel" width = 264>
+                        <picture>
+                            <source srcset="./images/Daniel.jpg 1x, ./images/daniel-2x.jpg 2x"
+                                    media="(min-width:320px)">
+                            <source srcset="./images/Daniel.jpg 1x, ./images/daniel-2x.jpg 2x"
+                                    media="(min-width:768px)">
+                            <source srcset="./images/Daniel.jpg 1x, ./images/daniel-2x.jpg 2x"
+                                    media="(min-width:1200px)">
+                            <img src="./images/Daniel.jpg" alt="Daniel" width = 264>
+                        </picture>
                         <div class="sec-four-worker">
-                            <h3 class="section-two-list-h section-four-list-h-three">Daniel Wilson</h3>
+                            <h3 class="section-four-list-h-three">Daniel Wilson</h3>
                             <p class="section-two-list-p section-four-list-p">UI Designer</p>
                             <ul class="sec-four-sn-list">
                                 <li class="sec-four-worker-sn-li">
@@ -304,7 +417,7 @@
     <footer class="index-footer">
         <div class="container index-footer-div">
             <div class="index-footer-logo">
-                <a href="./index.html" class="logo link one-footer-index">Web<span class="logo-span-two">Studio</span></a>
+                <a href="./index.html" class="logo link ">Web<span class="logo-span-two">Studio</span></a>
                 <p class="footer-p">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
             </div>
             <div class="index-footer-sn">
@@ -397,7 +510,6 @@
                 <div class="modal-field-two">
                     <label for="user-comment" class="modal-form-label"><span>Comment</span></label>
                     <textarea id="user-comment" name="user-comment" placeholder="Text input" class="modal-comment"></textarea>
-                    <!--<input type="comment" name="comment" class="modal-input-one" required placeholder="Text input">!-->
                 </div>
                 <div class="modal-field-three">
                     <input  id="user-privacy" type="checkbox" name="user-privacy" value="true" class="modal-checkbox visually-hidden">
@@ -410,5 +522,6 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
