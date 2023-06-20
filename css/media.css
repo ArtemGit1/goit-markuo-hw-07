@@ -185,7 +185,7 @@
         margin-right: 120px;
     }
     .section{
-        width: 768px;
+        width: 100%;
         height: 436px;
         padding-top: 112px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg-tablet.jpg);
@@ -249,12 +249,12 @@
     }
     .index-main-customers{
         height: 360px;
-        margin-left: 108px;
     }
     .index-main-customers-list{
         width: 552px;
         height: 366px;
         flex-wrap: wrap;
+        margin: 0 auto;
     }
     .customers-h{
         justify-content: left;
@@ -265,7 +265,7 @@
     }
     .index-footer-div{
         flex-wrap: wrap;
-        margin-left: 20%;
+        padding-left: 108px;
     }
     .index-footer-logo{
         margin-right: 24px;
@@ -296,7 +296,6 @@
         display: none;
     }
     .section{
-        width: 1440px;
         height: 600px;
         padding-top: 186px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg-desktop.jpg);
@@ -310,6 +309,16 @@
         height: 120px;
         margin-bottom: 36px;
     }
+    .footer-sub{
+        padding-left: 40px;
+    }
+    .index-footer-sn{
+        padding-left: 60px;
+    }
+    .index-footer-logo{
+        padding-left: 78px;
+    }
+
 }
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
