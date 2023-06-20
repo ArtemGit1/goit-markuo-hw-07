@@ -161,10 +161,6 @@ body{
     align-items: center;
     padding: 0px;
     margin-right: 76px;
-    width: 115px;
-    height: 24px;
-    left: 156px;
-    top: 24px;
 }
 
 .link{
@@ -306,6 +302,9 @@ body{
     color: #4D5AE5;
     margin-top: 40px;
 }
+.mob-menu-header-address-list-li-a{
+    color: #4D5AE5;
+}
 .mob-menu-header-address-list-li-a-two{
     width: 192px;
     height: 24px;
@@ -441,10 +440,8 @@ body{
 .index-footer{
     background-color: #2e2f42;
     padding: 100px 0;
-    width: 1440px;
-    height: 312px;
+
     margin: 0 auto;
-    position: relative;
 }
 .logo-span-two{
     color:#f4f4fd;
@@ -496,7 +493,6 @@ img{
 .header-modal-btn{
     max-width: 32px;
     max-height: 32px;
-    margin-right: -65px;
     background-color: transparent;
     border: transparent;
 }
@@ -640,7 +636,7 @@ img{
     align-items: baseline;
 }
 .index-footer-logo{
-    margin-right: 120px;
+
 }
 .index-footer-sn{
     margin: 0;
@@ -819,11 +815,7 @@ img{
     margin-right: 120px;
 }
 .footer-sub{
-    position: absolute;
-    left: 57.5%;
-    right: 11.04%;
-    top: 27%;
-    bottom: 42.31%;
+
 }
 .footer-sub-p{
     font-family: 'Roboto';
@@ -880,15 +872,11 @@ img{
     color: #FFFFFF;
     margin-left: 20px;
     padding-left: 24px;
-    padding-right: 64px;
     cursor: pointer;
 }
 .footer-submit-icon{
    width: 24px;
    height: 20px;
-   position: absolute; 
-   left: 405px;
-   bottom: 10px;
    margin-left: 16px;
 }
 .backdrop{
@@ -903,7 +891,7 @@ img{
 }
 .modal{
     position: absolute;
-    width: 100%;
+    width: 408px;
     min-height: 584px;
     padding: 72px 24px 24px 24px;
     left: 50%;
