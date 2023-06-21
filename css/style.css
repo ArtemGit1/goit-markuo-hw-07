@@ -487,7 +487,7 @@ img{
     display: flex;
 }
 .container{
-    width: 1158px;
+    max-width: 1158px;
     margin-left: auto;
     margin-right: auto;
     padding: 0 15px;
@@ -588,8 +588,6 @@ img{
     padding-bottom: 120px;
 }
 .index-main-customers-list{
-    width: 1128px;
-    height: 88px;
     list-style: none;
     display: flex;
     gap: 24px;
