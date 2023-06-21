@@ -916,10 +916,9 @@ img{
     letter-spacing: 0.02em;
     color: #2E2F42;
     margin-top: -10px;
+    padding-bottom: 16px;
 }
 .modal-form{
-    margin-left: 24px;
-    margin-right: 24px;
     flex-direction: column;
     position: relative;
 }
